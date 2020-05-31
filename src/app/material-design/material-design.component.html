@@ -1,0 +1,18 @@
+<mat-sidenav-container class="example-container" *ngIf="shouldRun">
+    <mat-sidenav mode="side"  #sideNav>
+      <app-side-bar></app-side-bar>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar>
+        <button mat-icon-button (click)="sideNav.toggle()"><i class="material-icons">menu</i></button>
+        <span class="example-fill-remaining-space"></span>
+        <span class="user-text">Welcome Gest</span>
+         <button mat-button>Log out</button>
+      </mat-toolbar>
+      <div class="main-cont">
+        <router-outlet></router-outlet>
+        
+      </div>
+     
+    </mat-sidenav-content>
+  </mat-sidenav-container>

@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-manager';
+  shouldRun=true;
   constructor(){}
    allPerson = [
     {name:"dinesh",age:"28"},

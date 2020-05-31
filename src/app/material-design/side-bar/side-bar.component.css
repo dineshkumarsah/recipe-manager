@@ -1,0 +1,18 @@
+img {
+    width: 146px;
+    height: 156px;
+    border-radius: 50%;
+   
+}
+.user-img{
+    margin-left: 39px;
+    margin-top: 21px;
+    margin-right: 20px;
+}
+#UserName{
+    padding: 10px 10px 10px;
+}
+.mat-nav-list a{
+    color: white;
+}
+  
