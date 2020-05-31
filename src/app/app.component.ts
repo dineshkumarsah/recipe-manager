@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-manager';
+  constructor(){}
+   allPerson = [
+    {name:"dinesh",age:"28"},
+    {name:"dinesh",age:"28"},
+    {name:"dinesh",age:"28"}
+  ];
 }

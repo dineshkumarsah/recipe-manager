@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <p>ng-template with ngIf</p>
+            <button type="button" (click)="onToggle1()">toggle</button>
+            <ng-template [ngIf]="toggleFlag1">
+                <p> ng-tempalte with [ngIf]</p>
+            </ng-template>
+        </div>
+        <div class="col-md-6">
+            <h1>if else ng-template</h1>
+            <button class="btn btn-success" (click)="onToggle2()">button2</button>
+            <div *ngIf="toggleFlag2; else elseBlock">
+                <p>i am 1st block</p>
+            </div>
+            <ng-template #elseBlock>
+                <p>i am ng-template block</p>
+            </ng-template>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>ng-template example for if else then</h3>
+            <button class="bt btn-default" (click)="onToggle3()">toggle3</button>
+            <div *ngIf="toggleFlag3; then oddBlock else evenBlock">
+            </div>
+            <ng-template #oddBlock>
+                <p>This is odd number 1 3 5 7</p>
+            </ng-template>
+            <ng-template #evenBlock>
+               <p>This is even number 2 4 6 </p>
+            </ng-template>
+        </div>
+    </div>
+
+</div>
